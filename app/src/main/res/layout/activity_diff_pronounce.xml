@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.david_cohn.ezhear.testYourHearing"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#b3e1e1">
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:text=" Click to hear"
+        android:textColor="#000000"
+        android:textSize="45dp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/abc_text_size_display_1_material"
+        android:gravity="center"
+        >
+
+        <Button
+            android:background="#137c91"
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:id="@+id/diffButtonLeft"
+            android:layout_centerInParent="true"
+
+            android:textColor="#ffffff"
+            android:onClick="leftButtonClick"
+            />
+
+        <Button
+            android:background="#137c91"
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:id="@+id/diffButtonRight"
+            android:layout_centerInParent="true"
+
+            android:layout_alignBottom="@+id/button1"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:onClick="rightButtonClick"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:background="#137c91"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Test me"
+        android:id="@+id/button_say_something"
+        android:onClick="saySomethingClick"
+        android:textColor="#ffffff"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/abc_text_size_display_1_material"
+        android:gravity="center"
+        >
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/leftCheckBox"
+        android:onClick="leftCheckBoxClick" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/rightCheckBox"
+        android:onClick="rightCheckBoxClick" />
+
+    </LinearLayout>
+
+    <Button
+        android:background="#137c91"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Next pair"
+        android:id="@+id/button_next_pair"
+        android:onClick="nextPairClick"
+        android:textColor="#ffffff"
+        />
+
+</LinearLayout>
